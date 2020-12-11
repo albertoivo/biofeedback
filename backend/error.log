@@ -1,0 +1,226 @@
+2020-12-11 11:57:55,645 INFO: errors [in app.py:59]
+2020-12-11 11:59:06,985 INFO: errors [in app.py:59]
+2020-12-11 14:41:34,394 INFO: errors [in app.py:65]
+2020-12-11 14:41:59,028 ERROR: Exception on /hrv/data [GET] [in /home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/05674711445/Desenvolvimento/pessoal/BioFeedback/hrv/hrv.py", line 12, in hrv
+    df = pd.read_excel('./HRV_teste.xlsx', index_col=0)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/util/_decorators.py", line 296, in wrapper
+    return func(*args, **kwargs)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 304, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 867, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_xlrd.py", line 21, in __init__
+    import_optional_dependency("xlrd", extra=err_msg)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/compat/_optional.py", line 110, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'xlrd'. Install xlrd >= 1.0.0 for Excel support Use pip or conda to install xlrd.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1822, in handle_user_exception
+    return handler(e)
+  File "app.py", line 52, in bad_request
+    'code': str(e.code),
+AttributeError: 'ImportError' object has no attribute 'code'
+2020-12-11 14:42:42,331 INFO: errors [in app.py:65]
+2020-12-11 14:42:45,837 ERROR: Exception on /hrv/data [GET] [in /home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/05674711445/Desenvolvimento/pessoal/BioFeedback/hrv/hrv.py", line 12, in hrv
+    df = pd.read_excel('./HRV_teste.xlsx', index_col=0)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/util/_decorators.py", line 296, in wrapper
+    return func(*args, **kwargs)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 304, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 867, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_xlrd.py", line 21, in __init__
+    import_optional_dependency("xlrd", extra=err_msg)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/compat/_optional.py", line 110, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'xlrd'. Install xlrd >= 1.0.0 for Excel support Use pip or conda to install xlrd.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1822, in handle_user_exception
+    return handler(e)
+  File "app.py", line 52, in bad_request
+    'code': str(e.code),
+AttributeError: 'ImportError' object has no attribute 'code'
+2020-12-11 14:42:55,838 INFO: errors [in app.py:65]
+2020-12-11 14:43:26,118 INFO: errors [in app.py:65]
+2020-12-11 14:43:30,898 ERROR: Exception on /hrv/data [GET] [in /home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/05674711445/Desenvolvimento/pessoal/BioFeedback/hrv/hrv.py", line 12, in hrv
+    df = pd.read_excel('./HRV_teste.xlsx', index_col=0)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/util/_decorators.py", line 296, in wrapper
+    return func(*args, **kwargs)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 304, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 867, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_xlrd.py", line 21, in __init__
+    import_optional_dependency("xlrd", extra=err_msg)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/compat/_optional.py", line 110, in import_optional_dependency
+    raise ImportError(msg) from None
+ImportError: Missing optional dependency 'xlrd'. Install xlrd >= 1.0.0 for Excel support Use pip or conda to install xlrd.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1822, in handle_user_exception
+    return handler(e)
+  File "app.py", line 52, in bad_request
+    'code': str(e.code),
+AttributeError: 'ImportError' object has no attribute 'code'
+2020-12-11 14:45:48,105 INFO: errors [in app.py:65]
+2020-12-11 14:45:51,773 ERROR: Exception on /hrv/data [GET] [in /home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/05674711445/Desenvolvimento/pessoal/BioFeedback/hrv/hrv.py", line 12, in hrv
+    df = pd.read_excel('./HRV_teste.xlsx', index_col=0)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/util/_decorators.py", line 296, in wrapper
+    return func(*args, **kwargs)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 304, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 867, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_xlrd.py", line 22, in __init__
+    super().__init__(filepath_or_buffer)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 353, in __init__
+    self.book = self.load_workbook(filepath_or_buffer)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_xlrd.py", line 37, in load_workbook
+    return open_workbook(filepath_or_buffer)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/xlrd/__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './HRV_teste.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1822, in handle_user_exception
+    return handler(e)
+  File "app.py", line 52, in bad_request
+    'code': str(e.code),
+AttributeError: 'FileNotFoundError' object has no attribute 'code'
+2020-12-11 14:45:52,776 ERROR: Exception on /hrv/data [GET] [in /home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/05674711445/Desenvolvimento/pessoal/BioFeedback/hrv/hrv.py", line 12, in hrv
+    df = pd.read_excel('./HRV_teste.xlsx', index_col=0)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/util/_decorators.py", line 296, in wrapper
+    return func(*args, **kwargs)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 304, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 867, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_xlrd.py", line 22, in __init__
+    super().__init__(filepath_or_buffer)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 353, in __init__
+    self.book = self.load_workbook(filepath_or_buffer)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_xlrd.py", line 37, in load_workbook
+    return open_workbook(filepath_or_buffer)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/xlrd/__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './HRV_teste.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1822, in handle_user_exception
+    return handler(e)
+  File "app.py", line 52, in bad_request
+    'code': str(e.code),
+AttributeError: 'FileNotFoundError' object has no attribute 'code'
+2020-12-11 14:45:59,090 ERROR: Exception on /hrv/data [GET] [in /home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/05674711445/Desenvolvimento/pessoal/BioFeedback/hrv/hrv.py", line 12, in hrv
+    df = pd.read_excel('./HRV_teste.xlsx', index_col=0)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/util/_decorators.py", line 296, in wrapper
+    return func(*args, **kwargs)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 304, in read_excel
+    io = ExcelFile(io, engine=engine)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 867, in __init__
+    self._reader = self._engines[engine](self._io)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_xlrd.py", line 22, in __init__
+    super().__init__(filepath_or_buffer)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_base.py", line 353, in __init__
+    self.book = self.load_workbook(filepath_or_buffer)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/pandas/io/excel/_xlrd.py", line 37, in load_workbook
+    return open_workbook(filepath_or_buffer)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/xlrd/__init__.py", line 111, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: './HRV_teste.xlsx'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1822, in handle_user_exception
+    return handler(e)
+  File "app.py", line 52, in bad_request
+    'code': str(e.code),
+AttributeError: 'FileNotFoundError' object has no attribute 'code'
+2020-12-11 14:46:24,223 INFO: errors [in app.py:65]
+2020-12-11 14:46:36,085 INFO: errors [in app.py:65]
+2020-12-11 14:46:37,532 ERROR: Exception on /hrv/data [GET] [in /home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py:1892]
+Traceback (most recent call last):
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1953, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 1968, in finalize_request
+    response = self.make_response(rv)
+  File "/home/05674711445/Desenvolvimento/Python/anaconda3/envs/BioFeedback/lib/python3.7/site-packages/flask/app.py", line 2131, in make_response
+    " {rv.__class__.__name__}.".format(rv=rv)
+TypeError: The view function did not return a valid response. The return type must be a string, dict, tuple, Response instance, or WSGI callable, but it was a DataFrame.
+2020-12-11 14:47:08,406 INFO: errors [in app.py:65]
+2020-12-11 14:47:28,177 INFO: errors [in app.py:65]

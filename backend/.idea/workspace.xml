@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5804e724-53f3-4298-a6f8-c93d4a60f57b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1lVvMIF5vxGURgDt7xuurnAf4WD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hrv" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/hrv" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="BioFeedback" type="Python.FlaskServer">
+      <module name="BioFeedback" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5804e724-53f3-4298-a6f8-c93d4a60f57b" name="Default Changelist" comment="" />
+      <created>1607695025786</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607695025786</updated>
+      <workItem from="1607695032628" duration="3765000" />
+      <workItem from="1607703848345" duration="2749000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="566" y="342" width="507" height="388" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1607696944639">
+      <screen x="49" y="100" width="1551" height="875" />
+    </state>
+    <state x="566" y="342" width="507" height="388" key="#com.intellij.fileTypes.FileTypeChooser/49.100.1551.875/1600.0.1920.1080@49.100.1551.875" timestamp="1607696944639" />
+    <state x="507" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1607695093470">
+      <screen x="49" y="100" width="1551" height="875" />
+    </state>
+    <state x="507" y="364" key="com.intellij.ide.util.TipDialog/49.100.1551.875/1600.0.1920.1080@49.100.1551.875" timestamp="1607695093470" />
+  </component>
+</project>
